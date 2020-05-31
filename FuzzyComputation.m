@@ -35,8 +35,8 @@ Kd_rule=[
 	qValue = zeros(1,2);  %e(k)和Δe(k)的量化值
 	qValue_K = zeros(1,3);
 	
-	qValue(1)=6*error/1.5;   
-	qValue(2)=6*derror/(2*1.5);
+	qValue(1)=6*error/100;   
+	qValue(2)=6*derror/(2*100);
     
     %e(k)隶属度,e(k)隶属度索引
 	[ms_E,index_E]=CalMembership(qValue(1));  %e(k)
